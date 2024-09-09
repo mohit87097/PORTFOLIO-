@@ -1,196 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-   
+
 <body>
-    <header>
-        <div class="container1">
-        <nav class="justify-between" id="main-nav">
-            <div class="bg-container flex item-center justify-between">
-            <div class="left">
-                <div class="flex item-center ">
-                    <img src="./images/img/logo.svg" />
-                <div >
-                    <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skils">Skills</a>
-                    <a href="#project">Projects</a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a class="navbar-brand portfolio-logo" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active text-white" href="#sectionHome">
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link text-white active" href="#sectionAbout">About</a>
+                <a class="nav-link text-white" href="#sectionSkills">skills</a>
+                <a class="nav-link text-white" href="#sectionProjects">Projects</a>
+                <a class="nav-link text-white" href="#sectionService">Service</a>
+                <a class="nav-link text-white" href="#sectionWork">Work </a>
+                <a class="nav-link text-white" href="#sectionMyDetails">My Details </a>
+
             </div>
-            </div>
-             <div class="right">
-                <button class="btn btn-primary"><a href="#cont">Contact Me</a> </button>
-            </div>
-            </div>
-        </nav>
-        <div  class="mohit flex item-center justify-between">
-             <div class="left2 flex-1">
-                 <img class="m" src="newm.png"/>
-            </div>
-            <div class="right2 flex-1">
-                <h4>Mohit kumar</h4>
-                <h1>i'm a web 
-                <br><span>Developer</span></h1>
-                <p>This is my official portfolio website to showes
-                    <br>Details and work exiprins web development</p>
-             <div>
-                <button class=" btn btn-primary">DOWNLOAD CV</button>
-                </div>
-                 </div>
         </div>
-    </header>
-    <section id="about" class="about">
-        <div class="container flex item-center">
-            <div class="left3 flex-1">
-                <img class="image" src="mohit.jpg">
-            </div>
-            <div class="right3 flex-1">
-                <h1>About<span>Me</span></h2>
-                <h3>Hello! i'm Mohit</h3>
-                <P>welcome to my developer portfolio! I'm Mohit kumar
-                from Niamt,Ranchi i am web developer with a passion
-                for creating, responsive, and user-friendly website.
-                I've worked on a variety of web projects, ranging from
-                personal blog to e-commerce platforms.
-                </P>
-                <div class="social flex">
-                    <a href="#" ><img class="hei" src="images/instagram.png"></a>
-                    <a href="#"><img class="hei" src="images/twitter.png"/></a>
-                    <a href="#" ><img class="hei" src="facebook.png"></a>
-                    <a href="#"><img class="hei" src="linkedin.png"></a>
+    </nav>
+
+    <div class="banner-section-bg-container d-flex flex-column justify-content-center" id="sectionHome">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" class="banner-section-image w-100" />
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center">
+                    <h1 class="banner-section-heading mb-3">
+                        Hey, I am <span class=" person-name">Mohit</span>
+                    </h1>
+                    <p class="banner-section-description mb-3">
+                        Currently I am learning full-stack development and I also known as these type of skills Ex- HTML, CSS and Bootstrap...
+                    </p>
+                    <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                        Contact me
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog mt-5">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel"> Contact me </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="detail"><span class="style1">Phone No.</span> - 8709757213</h1>
+                                    <h1 class="detail"> <span class="style1">Email Id.</span> - mohitkumar620754@gmail.com </h1>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-             </div>
-        </div>
-    </section>
-    <section id="skils" class="services">
-            <div class="container2">
-            <h1 class="section-heading"><span>our</span> Skills</h1>
-            <p>we provide high stander clean website for your business solution</p></div>
-            <div class="card-wrapper">
-            <div class="card">
-                    <img   src="https://img.freepik.com/free-photo/male-painter-using-watercolor-his-art-studio_23-2150213629.jpg?t=st=1718732108~exp=1718735708~hmac=597d1c86b44ce9567e785b253aa5a60225adce8aff9fbc625b61ad2e9d565a21&w=740"/>
-                   <h2>Graphic Design</h2>
-                    <p>Graphic design is a creative discipline that involves creating visual content to communicate messages.
-                    </p>
-                </div>
-                  <div class="card">
-                    <img   src="https://img.freepik.com/premium-photo/flat-illustration-ui-design-team-brainstorming-sketching-wireframes_818261-9273.jpg"/>
-                   <h2>Web developer</h2>
-                    <p>A web developer is a professional who specializes in the development of websites and web applications.</p>
-                </div>
-                <div class="card">
-                    <img   src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010123.jpg"/>
-                   <h2>Computer Programing</h2>
-                    <p>Computer programming, often referred to as coding, is the process of designing and building executable computer software </p>
-                </div>
-            </div> 
-</section>
-<section class="freelancer">
-    <h1>I Am Available For Freelancer.</h1>
-    <p>we provide high standar clean website for your business solution</p>
-    <button class="btn btn-primary">Downlod CV</button>
-</section>
-<section class="revies">
-    <div class="container">
-   <h1 class="section-heading"><span>Our</span> Client</h1>
-   <p>we provide high standar clean website for your business solution at low price</p>
-   <div class="slider">
-    <div class="slide">
-        <img src="./images/img/lady.png">
-        <P>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit animidest laborum</P>
-         <span class="section-heading">john doel,such a big Company</span>
-    </div>
-   </div>
-    </div>
-  </section>
-<section id="project" class="work">
-    <div class="container ">
-        <h1 class="section-heading1"><span >Our</span>  Projects</h1>
-        <p class="ha">we provide high standar clean website for your business solution on given times</p>
-    <div class="card-wrapper">
-        <div class="card">
-            <img src="./images/img/article-ph-1.png"/>
-        </div>
-        <div class="card">
-            <img  src="./images/img/article-ph-2.png"/>
-        </div>
-        <div class="card">
-            <img src="./images/img/article-ph-3.png"/>
-        </div>
-        <div class="card">
-            <img src="./images/img/ph-1.png"/>
-        </div>
-        <div class="card">
-            <img src="./images/img/ph-2.png"/>
-        </div>
-        <div class="card">
-            <img src="./images/img/ph-3.png"/>
-        </div>
-    </div>
-    </div>
-
-</section>
-<section id="cont" class="Contact">
-    <div class="container">
-<h1 class="section-heading">Contact <span> Us</span></h1>
-<p>we provide high standar clean website for your business solution.</p>
-<div class="card-wrapper flex ">
-    <div class="card5">
-        <img class="heio" src="https://img.freepik.com/free-vector/phone-with-call-lines_78370-6565.jpg"/>
-        <h1 class="hi">Call Us On</h2>
-        <h4>8709757213</h4>
-    </div>
-    <div class="card5">
-        <img class="heio" src="https://img.freepik.com/free-psd/phone-icon-design_23-2151311652.jpg"/>
-        <h1 class="hi">Email Us At</h2>
-        <h4>mohitkumar80845565@gmail.com</h4>
-    </div>
-    <div class="card5">
-        <img class="heio" src="https://img.freepik.com/free-vector/whatsapp-icon-design_23-2147900929.jpg"/>
-        <h1 class="hi"> whatsapp no</h2>
-        <h4>8709757213</h4>
-    </div>
-    </div>
-    <form action="">
-        <div class="input-wrap">
-            <input class="boxes" type="text" placeholder="Your Name *">
-            <input class="boxes1" type="text" placeholder="Your Email *">
-        </div>
-        <div class="input-wrap-2 d-flex flex-column">
-            <input class="boxes3" type="text" placeholder="Your Subject... ">
-            <textarea class="boxes4" name="" id="" cols="15" rows="6" placeholder="Your Message..."></textarea>
-            <div class="btn-wrap">
-                <button class="style">Send Message</button>
             </div>
         </div>
-    </form>
-</div>
-</section>
-<footer>
-    <img class="ear" src="./images/img/logo.svg">
-    <div class="footer-soc flex">
+    </div>
 
-      <a href="#"><img class="heia" src="images/instagram.png"/></a>
-      <a href="#"><img class="heia" src="images/twitter.png"/></a>
-      <a href="#"><img class="heia" src="facebook.png"/></a>
-      <a href="#"><img class="heia" src="linkedin.png"/></a>
+
+
+
+    <div class="portfolio-aboutme-section pt-5 pb-5 " id="sectionAbout">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 order-md-2 order-lg-2 mt-4">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://res.cloudinary.com/dv0cclzyj/image/upload/v1725363405/WhatsApp_Image_2024-09-03_at_17.00.47_d909f796_yft0aq.jpg" class="d-block  portfolio-aboutme-section-image w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/dv0cclzyj/image/upload/v1725463469/ihnsqhxiux3xmmucnhvq.jpg" class="d-block  portfolio-aboutme-section-image w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/dv0cclzyj/image/upload/v1725464993/vgfhuhnrbjmkce0zccch.jpg" class="d-block portfolio-aboutme-section-image w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-6 order-lg-1 order-md-1  d-flex flex-column justify-content-center mt-4 ">
+                    <h1 class="portfolio-aboutme-section-title pb-4"> Passionate Web Developer & Learner </h1>
+                    <h1 class="portfolio-aboutme-section-heading"> About me </h1>
+                    <p class="portfolio-aboutme-section-description pt-3">
+                        My name is Mohit kumar, and I am currently
+                        pursuing my bachelors degree in <span class=" person-name1"> NIAMT Ranchi</span>.
+                        <br /> <br />
+                        I am learning a full-stack development with a specialisation
+                        in 4.0 technologies At NxtWaves CCBP 4.0 Academy.
+                        I am a dedicated person with a family of five. I
+                        enjoy reading, and the knowledge and
+                        perspective that my reading gives me have
+                        strengthened my teaching skills and
+                        presentation abilities. My goal is to become a proficient web developer and build a
+                        successful career in the tech industry. I'm committed to
+                        continuous learning and staying up-to-date with industry trends.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div class="end">
-        Copyright 2020 Name PSD Template. All Right Reserved.
+
+
+
+
+
+    <div class="portfolio-skills-section pt-5 pb-5 " id="sectionSkills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="portfolio-aboutme-section-title pb-2 pl-3"> Skills :</h1>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="shadow card1 text-center mb-3 ">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" class="portfolio-skills-section-image " />
+                        <h1 class="portfolio-skills-section-heading pt-2"> HTML </h1>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="shadow card1 text-center mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" class="portfolio-skills-section-image " />
+                        <h1 class="portfolio-skills-section-heading pt-2"> CSS </h1>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="shadow card1 text-center mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" class="portfolio-skills-section-image " />
+                        <h1 class="portfolio-skills-section-heading pt-2"> Bootstrap </h1>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="shadow card1 text-center mb-3 ">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" class="portfolio-skills-section-image " />
+                        <h1 class="portfolio-skills-section-heading pt-2"> JS </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
+
+
+
+    <div class="section1" id="sectionProjects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div>
+                        <h1 class="main">Projects:</h1>
+                        <h1 class="main1">I've worked on several projects, including:</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shodow mt-2">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-1-img.png" class="img w-100" alt="" />
+                        <div class="p-3">
+                            <p class="para">Web design</p>
+                            <h1 class="main2">Royal Grand Hotel</h1>
+                            <p class="para1">Royal Grand Hotel is a Simple Static Website. we can use this layout for building the other websites...</p>
+                            <a href="" class="sty">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="sty" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg> </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <div class="card shodow mt-2 mb-5">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-2-img.png" class="img w-100" alt="" />
+                        <div class="p-3">
+                            <p class="para">Web design</p>
+                            <h1 class="main2">Happy Meals</h1>
+                            <p class="para1">Happy Meals is the best-in-class food ordering page today.with interactive Ul/UX and simple call to action...</p>
+                            <a href="" class="sty">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="sty" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg> </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shodow mt-2">
+                        <img src="https://assets.ccbp.in/frontend/static-website/flats-list-bg.png" class="img3 w-100" />
+                        <div class="p-3">
+                            <p class="para">Web design</p>
+                            <h1 class="main2">Flats Page</h1>
+                            <p class="para1">This is a fully furnished house with handmode furniture inculding a luxury ensuite facllities pack its bluit-up area is about 1600sq.ft....</p>
+                            <a href="" class="sty">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="sty" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg> </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <div class="card shodow mt-2">
+                        <img src=" https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png" class="img3 w-100" />
+                        <div class="p-3">
+                            <p class="para">Web design</p>
+                            <h1 class="main2">Advanced Technologies </h1>
+                            <p class="para1">Mechinery and equipment developed from the application of sientific knowiedge...</p>
+                            <a href="" class="sty">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="sty" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg> </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="section" id="sectionService">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div>
+                        <h1 class="headingh mt-4">Services</h1>
+                        <h1 class="paragraphp">What I do</h1>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card2 shadow">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" class="img2" alt="" />
+                        <h1 class="headingh mt-2">Static Websites</h1>
+                        <p class="para2">A Ststic Website contain Web pages with fixed content.Each page is developed using HTML and CSS and displays the same information to every visitor.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card2 shadow">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" class="img2" alt="" />
+                        <h1 class="headingh mt-2">Responsive Web design</h1>
+                        <p class="para2">Responsive Web desigen is the approach that suggests that design and development should respond to the user's behaviour and environment based on screen size,platform and orientation</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-3 mb-5">
+                    <div class="card2 shadow">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" class="img2" alt="" />
+                        <h1 class="headingh mt-2">Customisable Layouts</h1>
+                        <p class="para2">Customisable sites are templates with set layout. You may be able to change photos and colour,but your site will look similar to many other sites due to the template. the same goes for...</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="work-done-section pt-3 pb-5" id="sectionWork">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 ">
+                    <div>
+                        <h1 class="headingh mb-3">Work</h1>
+                        <h1 class="paragraphp mb-3">I've worked</h1>
+                    </div>
+                </div>
+
+
+                <div class="col-4 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="#ffffff" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">20</h1>
+                    <h1 class="work-done-card-sub-title">Projects Completed</h1>
+                </div>
+                <div class="col-4 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="#ffffff" class="bi bi-file-text" viewBox="0 0 16 16">
+                        <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" />
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">3,200</h1>
+                    <h1 class="work-done-card-sub-title">Lines of Code </h1>
+                </div>
+                <div class="col-4 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="#ffffff" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">25</h1>
+                    <h1 class="work-done-card-sub-title">Hours Worked </h1>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-section pt-5" id="sectionMyDetails">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    <div class=" d-flex flex-row">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="footer-section-image" />
+                        <div class="ml-3">
+                            <h1 class="footer-section-sub-heading">Mohit</h1>
+                            <p class="footer-section-text">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading ">Phone No.</h1>
+                    <div>
+                        <i class="fas fa-phone-alt icon"></i>
+                        <span class="footer-section-text ml-2">8709757213</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading ">E-Mail</h1>
+                    <div>
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="footer-section-text ml-2 ">mohitkumar620754@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading ">Address</h1>
+                    <div>
+                        <i class="fas fa-map-marked-alt icon"></i>
+                        <span class="footer-section-text ml-2">24 Ayur Vigyan Nagar, Bihar, India.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section-copyright-container">
+            <i class="fa fa-copyright icon" aria-hidden="true"></i>
+            <span class="footer-section-text">
+                2024 by Mohit kumar. Created with HTML, CSS, Bootstrap.
+            </span>
+        </div>
+    </div>
+
+
 
 </body>
+
 </html>
